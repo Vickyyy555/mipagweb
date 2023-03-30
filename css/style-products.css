@@ -1,0 +1,23 @@
+*{
+    margin: 10px;
+    padding: 5px;
+    font-family: Georgia;
+    background-color: #E4D0D0;
+}
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4);
+}
+
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#img10,#img11,#img12{
+    height: 300px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 40px;
+}
+

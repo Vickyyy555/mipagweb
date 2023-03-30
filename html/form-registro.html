@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El blog de Vicky</title>
+
+    <link rel="icon" href="/assets/img/Icono de mi pag.ico">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>El blog de Vicky</h1>
+        </header>
+        <hr>
+        <h2>Registro</h2>
+    </div>
+    
+    <form method="get">
+        <fieldset>
+            
+            <label for="user"><b>Nombre de usuario:</b></label>
+            <input id="user" name="usuario" type="text" required/>
+        
+            <br>
+            <br>
+            
+            <label for="pw"><b>Contraseña:</b></label>
+            <input id="pw" name="contraseña" type="password" required/>
+            
+            <br>
+            <br>
+            
+            <label for="mail"><b>Email</b></label>
+            <input id="mail" name="email" type="email" required/>
+            <br>
+            <br>
+            <hr>
+        
+        
+            <label for="datebirth"><b>Fecha de nacimiento:</b></label>
+            <input id="datebirth" name="fecha_nac" type="date" required/>
+        
+            <br>
+            <br>
+        
+            <label class="sex"><b>Sexo:</b>
+            
+                <label for="sex">Masculino</label>
+                <input class="sex" name="sexo1" type="radio"/>
+            
+                <label for="sex">Femenino</label>
+                <input class="sex" name="sexo2" type="radio"/>
+            
+                <label for="sex">Prefiere no decir</label>
+                <input class="sex" name="sexo3" type="radio"/>
+            </label>
+                
+            <br>
+            <br>
+        
+            <label><b>País de origen:</b>
+                <input class="country" list="countries" name="paises" required/>    
+                <datalist class="country">
+                    <option value="Argentina"></option>
+                    <option value="Chile"></option>
+                    <option value="Perú"></option>
+                    <option value="Bolivia"></option>
+                    <option value="Brasil"></option>
+                    <option value="Paraguay"></option>
+                    <option value="Uruguay"></option>
+                    <option value="Colombia"></option>
+                    <option value="Venezuela"></option>
+                    <option value="Costa Rica"></option>
+                    <option value="México"></option>
+                    <option value="Panamá"></option>
+                    <option value="Ecuador"></option>
+                </datalist>
+            </label>    
+            <br>
+            <br>
+            <input id="politicas" type="checkbox" required/>
+            <label for="politicas">Acepto Políticas de Privacidad</label>
+            <br>
+            <input id="term-cond" type="checkbox" required/>
+            <label for="term-cond">Acepto Términos y Condiciones</label>
+            <br>
+            <input id="notif" type="checkbox">
+            <label for="notif">Deseo recibir notificaciones semanales sobre actualizaciones y novedades</label>
+
+        </fieldset>
+
+        <br>
+        
+        <button id="submit" name="enviar" type="submit">Enviar</button>
+        <button id="reset" name="resetear" type="reset">Resetear</button>
+
+    </form>
+</body>
+</html>
